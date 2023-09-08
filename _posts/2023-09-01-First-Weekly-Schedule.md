@@ -9,10 +9,7 @@ courses: { csp: {week: 1,} }
 ---
 
 ### PBL Unit 1 / Week 0
-Learning outcome.  Installing Tools and showing usage of VSCode.
-- Wednesday - Pick pair share partner, Pick crossover pair, Establish team of four.  Spend some time talking and getting to know each other, particularly with Computer Science experience and goals.  You should be matched with someone that has similar experience.
-- Thursday - Setup Tools on laptop and/or Cloud Computer.
-- Friday - Review and test as a Pair. Spend 25 minutes at one keyboard then switch for next 25 minutes.
+This week we experimented with creating two different posts with the code given to us. We created a Snake Game, and then my partner and I added a calculator to our 
 
 ### Hack Prepartation
 > Look for 'Hacks' to know what to do next.  Try to be done and learn your machine before Monday EOD.
