@@ -1,12 +1,14 @@
 ---
 toc: true
-comments: false
+comments: False
 layout: post
 title: Calculator for Pros
 description: Lets get ready for some equations!
 type: hacks
-courses: { CSP: {week: 2} }
+courses: { csp: {week: 3} }
 ---
+
+
 
 
 # Calculator
