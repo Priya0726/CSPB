@@ -1,14 +1,12 @@
 ---
-toc: true
-comments: false
-layout: post
-title: Login Page
-description: A demo of the login page.
-courses: { csp: {week: 19} }
+title: JWT Login (python/flask)
+layout: base
+description: A login screen that interacts with Python and obtains a JWT  
 type: ccc
+courses: { csp: {week: 18 }}
 ---
 
-    <!-- 
+<!-- 
 A simple HTML login form with a Login action when the button is pressed.  
 
 The form triggers the login_user function defined in the JavaScript below when the Login button is pressed.

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Coloring Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .shape {
+            width: 100px;
+            height: 100px;
+            background-color: #ffd700; /* Default color (gold) */
+            cursor: pointer;
+            position: relative; /* Positioning for centering */
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #ffd700;
+        }
+
+        .square {
+            background-color: #ffd700;
+        }
+
+        .diamond {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom-color: #ffd700;
+            position: relative;
+        }
+
+        .diamond:before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 100px;
+            height: 100px;
+            transform: rotate(45deg);
+            background-color: #ffd700;
+        }
+
+        .flower {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom-color: #ffd700;
+            position: relative;
+        }
+
+        .flower:before,
+        .flower:after {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 100px;
+            height: 100px;
+            border: 50px solid #ffd700;
+            border-radius: 50%;
+        }
+
+        .flower:before {
+            transform: rotate(45deg);
+        }
+
+        .flower:after {
+            transform: rotate(-45deg);
+        }
+
+        .colored {
+            background-color: #ff69b4; /* Custom color when clicked */
+        }
+    </style>
+</head>
+<body>
+    <h1>Custom Coloring Page</h1>
+    <div class="container">
+        <!-- Flower -->
+        <div class="shape flower" onclick="changeColor(this)"></div>
+        <!-- Triangle -->
+        <div class="shape triangle" onclick="changeColor(this)"></div>
+        <!-- Circle -->
+        <div class="shape circle" onclick="changeColor(this)"></div>
+        <!-- Square -->
+        <div class="shape square" onclick="changeColor(this)"></div>
+        <!-- Diamond -->
+        <div class="shape diamond" onclick="changeColor(this)"></div>
+    </div>
+
+    <script>
+        function changeColor(element) {
+            element.classList.toggle('colored');
+        }
+    </script>
+</body>
+</html>
